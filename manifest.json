@@ -1,0 +1,14 @@
+{
+  "name": "Auto Amex Offers",
+  "description": "Automatically applies Amex offers to your card",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["https://*.americanexpress.com/*"],
+      "js": ["amex-offers.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": ["tabs"]
+}
